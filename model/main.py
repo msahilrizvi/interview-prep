@@ -34,7 +34,7 @@ categories = df['Category'].unique().tolist()
 questions_by_category = {category: df[df['Category'] == category].to_dict(orient='records') for category in categories}
 
 # Load chat model
-chat_model = ChatGroq(model="llama3-8b-8192", api_key="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")
+chat_model = ChatGroq(model="llama3-8b-8192", api_key="")
 
 # Session storage
 user_sessions = {}
